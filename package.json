@@ -1,0 +1,27 @@
+{
+  "name": "dwd_a4_quotes",
+  "version": "1.0.0",
+  "description": "Get inspirational quotes and write your own",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YitingLiu97/dwd_A5_Fortune_Cookies.git"
+  },
+  "keywords": [
+    "Quotes",
+    "Inspirational",
+    "API"
+  ],
+  "author": "Yiting Liu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/YitingLiu97/dwd_A5_Fortune_Cookies/issues"
+  },
+  "homepage": "https://github.com/YitingLiu97/dwd_A5_Fortune_Cookies#readme",
+  "dependencies": {
+    "inspirational-quotes": "^1.0.8"
+  }
+}
