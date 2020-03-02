@@ -1,7 +1,7 @@
 window.addEventListener("DOMContentLoaded", () => {
   const quoteList = document.getElementById("quoteList");
   fetch("/quotes").then(res => res.json()).then((data) => {
-    quoteList.innerHTML = QuoteList(data);
+    quoteList.innerHTML = QuoteList(data.reverse());
   });
 
   const quoteForm = document.getElementById("quote-form");
