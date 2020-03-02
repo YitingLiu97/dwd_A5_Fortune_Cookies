@@ -1,0 +1,66 @@
+*{
+   margin: 0;
+   box-sizing: border-box;
+
+}
+
+body{
+    background-color: black ;
+    color: white;
+    font-size: medium;
+}
+
+h2{
+
+    /* position: left; */
+    width: 80vw;
+    /* float: inline-start; */
+    margin: 20vw;
+    position: sticky;
+    font-size: 10vw;
+
+}
+
+#quote-form{
+    scroll-behavior: smooth;
+    width: 100vw;
+    top:0;
+    height: 10vh;
+    position: center;
+    /* border-radius: 1000vw; */
+    background-color: white;
+    padding: 1vw;
+    /* margin: 1vw; */
+    position: fixed;
+    margin-bottom: 10vh;
+
+}
+
+ul{
+    list-style-type: none;
+    border: white 2 pt solid;
+
+}
+li{
+    padding: 10vw;
+
+}
+li:nth-child(even){
+    color: lemonchiffon;
+}
+
+.quote{
+    color: yellow;
+
+}
+/* .box{
+    border: white 2 pt solid;
+    box-sizing: border-box;
+
+} */
+
+@media screen and (max-width:400px){
+    #quote-form{
+        height:10vh;
+    }
+}

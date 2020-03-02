@@ -1,16 +1,18 @@
 const express = require("express");
 const path = require("path");
-const app = express();
-const bodyParser = require('body-parser');
-
 const fs = require("fs");
+
+const app = express();
+app.use(express.static("public"));
+app.use(express.json());
+// const bodyParser = require('body-parser');
+
 
 
 //quoteList[1].text
 //quoteList[1].from
 
-app.use(express.static("public"));
-app.use(express.json());
+
 
 app.get("/", (req, res) => {
   res.sendFile(path.join(__dirname, "views/index.html"));
@@ -56,7 +58,7 @@ function addQuote (newQuote){
 // quoteList.from.push(newQuote.from);
 
 // quoteList.push(newQuote);
-  console.log(`quotes is ${quotes}`);
+  // console.log(`quotes is ${quotes}`);
   // quoteList[2].text.push(newQuote.text);
   // quoteList[2].from.push(newQuote.from);
   fs.writeFileSync(path.join(__dirname,"./data/quotes.json"),JSON.stringify(quotes));

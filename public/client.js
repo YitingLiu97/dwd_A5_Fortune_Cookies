@@ -1,33 +1,51 @@
-// window.addEventListener("DOMContentLoaded", () => {
-//     const quoteList = document.getElementById("quoteList");
-//     fetch("/quotes").then(res=>res.json()).then((data)=>{
-//         console.log(`data text is ${data.text}`);
+window.addEventListener("DOMContentLoaded", () => {
+  const quoteList = document.getElementById("quoteList");
+  fetch("/quotes").then(res => res.json()).then((data) => {
+    quoteList.innerHTML = QuoteList(data);
+  });
 
-//         quoteList.innerHTML = data;;
-//         console.log(quoteList.innerHTML);
-//         return `<li>${data.text}</li>`;
-//     });
-// });
+  const quoteForm = document.getElementById("quote-form");
+  quoteForm.onsubmit = (e) => {
+    e.preventDefault();
+    const textInput = e.target.elements["text"];
+    const fromInput = e.target.elements["from"];
 
-if (typeof(window) !== 'undefined') {
+    //   const quoteInput = e.target.elements["text"];
+    //   const text = quoteInput.getElementById('text');
+    //   console.log(`text is ${text}`);
+    const text = textInput.value;
+    const from = fromInput.value;
 
-window.addEventListener("DOMContentLoaded",()=>{
-    const quoteList = document.getElementById('quoteList');
-    fetch('/quotes').then(res=>res.json()).then((data)=>{
-        quoteList.innerHTML = QuoteList(data.text);
-    });
+    console.log(`text is ${text}`);
+
+    //   quoteInput.value = "";
+    //fetch (path,promises)
+    fetch("/quotes",
+      {
+        method: "POST",
+        //JSON.stringify(value[, replacer [, space]])
+        body: JSON.stringify({ text: text, from: from }),
+        //A Headers object has an associated header list, which is initially empty and consists of zero or more name and value pairs.  
+        headers: {
+          'Content-Type': 'application/json'
+        },
+      }).then(res => res.json()).then((data) => {
+
+        quoteList.innerHTML = QuoteList(data);
+      });
+  }
 });
+
+function QuoteList(quotes) {
+  // return "I am happy";
+  // singleQuote.append()
+  return quotes.map((quote) => {
+    let singleQuote = `<li>${quote.text} <br> ${quote.from}<br><br></li>`;
+    singleQuote.className="quote";
+    let wrapper = document.createElement('div');
+    wrapper.className = "box";
+    wrapper.append(singleQuote);
+
+    return singleQuote;
+  }).join("");
 }
-
-function QuoteList(quotes){
-    console.log("working");
-
-    return quotes.map((quote)=>{
-        return `<li>${quote.text}</li>`;
-    }).join("");
-}
-
-
-// console.log(quote.getQuote());
-
-// console.log(quote.getRandomQuote());
