@@ -1,17 +1,16 @@
 <!-- Every README should start with an H1 -->
 # The Inspirational Quotes Project
 <!-- A one sentence description of the project or assignment -->
-This project utilizes the [inspirational-quote](https://www.npmjs.com/package/inspirational-quotes) library to develop an API service between server and client. 
+This project utilizes the [inspirational-quotes](https://www.npmjs.com/package/inspirational-quotes) library to develop an API service between server and client. 
 You can add your own quotes [here](https://yitingliu97-dwd-a5-inspo-quotes.glitch.me/)
+![inspirational quote web interface](https://github.com/YitingLiu97/dwd_A5_Inspo_Quotes/blob/master/pics/inspo-quotes.png)
 
 <!-- It is good practice to add an about or summary -->
 <!-- ## About -->
 
-
-
 <!-- It is essential to describe how to set up your project -->
 ## Setup
-Clone the repo and install npm library [inspirational-quote](https://www.npmjs.com/package/inspirational-quotes)
+Clone the repo and install npm library [inspirational-quotes](https://www.npmjs.com/package/inspirational-quotes)
 <!-- Any knowledge or tools you will need before hand -->
 ### Prerequisites
 
@@ -39,7 +38,7 @@ To develop this document, you can follow the steps provided below:
 <!-- Notes about the deployment -->
 ### Deployment
 
-This project is hosted on Github. Github renders markdown files.
+This project is hosted on Github. 
 
 ## Built with
 
@@ -48,23 +47,24 @@ This project is hosted on Github. Github renders markdown files.
 
 ## Authors
 
-* [Joey Lee](https://jk-lee.com) -- adjunct professor -- [NYU ITP](https://itp.nyu.edu)
-* [Cassie Tarakajian](https://cassietarakajian.com/) -- adjunct professor -- [NYU ITP](https://itp.nyu.edu)
+* [Yiting Liu](https://www.yliudesigns.com) -- ITP 2021-- [NYU ITP](https://itp.nyu.edu)
 
-## Code of Conduct
+<!-- ## Code of Conduct
 
-Please read the [CODE OF CONDUCT](https://www.mozilla.org/en-US/about/governance/policies/participation/) 
+Please read the [CODE OF CONDUCT](https://www.mozilla.org/en-US/about/governance/policies/participation/)  -->
 
 ## License
 
-This is README template is licensed according to [Attribution 4.0 International (CC BY 4.0) ](https://creativecommons.org/licenses/by/4.0/)
+[Attribution 4.0 International (CC BY 4.0) ](https://creativecommons.org/licenses/by/4.0/)
 
 <!-- thank and reference all the things that made your project happen -->
 ## Acknowledgements
 
-* [Creative Commons](https://creativecommons.org/licenses/by/4.0/) for their licensing documentation
+* [inspirational-quotes](https://www.npmjs.com/package/inspirational-quotes)
+* [Back-end-foundation-workbook](https://github.com/itp-dwd/back-end-foundations-workbook)
+<!-- * [Creative Commons](https://creativecommons.org/licenses/by/4.0/) for their licensing documentation
 * [Openmoji project](https://www.openmoji.org/library/#search=notebook&emoji=1F4D4) for their glyphs
-* [PurpleBooth's Readme Template](https://gist.github.com/PurpleBooth/109311bb0361f32d87a2)
+* [PurpleBooth's Readme Template](https://gist.github.com/PurpleBooth/109311bb0361f32d87a2) -->
 
 ***
 ***
@@ -73,17 +73,27 @@ This is README template is licensed according to [Attribution 4.0 International 
 <!-- For your assignments you might consider  -->
 # Notes & Process
 
+I wanted to create a website where users can contribute to the existing database. I chose inspirational-quotes since it is well documented. I followed the examples in the files when I installed the library. 
+
+Although it took me quite a while to understand the code, I am glad I figured most of the things out and I did the coding project by myself and with the help of Google. 
+
 <!-- How you built this project - Include images, gifs, and notes here -->
 ## Process & Documentation
+I followed the tutorials of the [Back-end-foundation-workbook](https://github.com/itp-dwd/back-end-foundations-workbook) since I couldn't really follow in class. The extra time spent on doing the exercises is worth it. But this week, I spent an extreme amount in learning the back end. It is quite harder than the front end that I am more familiar with.  
 
 <!-- Any specific challenges or struggles documented -->
 ## Challenges & Struggles
+I ran into several bugs during this project:
+1. Due to the wrong src for client.js, the console keeps telling me the window is undefined.
+2. I used Postman to figure out what I should do to send an object of quote and author. But it really took me a long time to figure it out.
+3. At first, when I try to POST anything, it only shows null. 
+4. In my console, it prints out the whole object without parsing out the text and from. 
 
 <!-- Any questions you have -->
 ## Questions
+I am still confused about using the function from another js file. In the example I saw, they used "module.exports". 
 
 <!-- References for resources and inspiration -->
 ## References
 
-* Author First Name, Author Last Name. [Link]()
-* Author First Name, Author Last Name. [Link]()
+* [Vinit Shahdeo](https://www.npmjs.com/package/inspirational-quotes)
