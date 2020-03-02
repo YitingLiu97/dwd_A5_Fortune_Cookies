@@ -85,9 +85,18 @@ I followed the tutorials of the [Back-end-foundation-workbook](https://github.co
 ## Challenges & Struggles
 I ran into several bugs during this project:
 1. Due to the wrong src for client.js, the console keeps telling me the window is undefined.
+
+
 2. I used Postman to figure out what I should do to send an object of quote and author. But it really took me a long time to figure it out.
-3. At first, when I try to POST anything, it only shows null. 
+![sending request through POSTMAN](https://github.com/YitingLiu97/dwd_A5_Fortune_Cookies/blob/master/pics/16.png)
+3. At first, when I try to POST anything, it only shows null or undefined.
+![screenshot of coding error](https://github.com/YitingLiu97/dwd_A5_Fortune_Cookies/blob/master/pics/6.png)
 4. In my console, it prints out the whole object without parsing out the text and from. 
+![screenshot of coding error](https://github.com/YitingLiu97/dwd_A5_Fortune_Cookies/blob/master/pics/13.png)
+5. I couldn't add my textInput to the existing array upon mouse click. 
+![screenshot of not able to add content to the array](https://github.com/YitingLiu97/dwd_A5_Fortune_Cookies/blob/master/pics/11.png)
+6. When I wanted to console.log the array content, it shows me the position of the element instead. 
+![inspirational quote web interface](https://github.com/YitingLiu97/dwd_A5_Fortune_Cookies/blob/master/pics/14.png)
 
 <!-- Any questions you have -->
 ## Questions
