@@ -88,15 +88,32 @@ I ran into several bugs during this project:
 
 
 2. I used Postman to figure out what I should do to send an object of quote and author. But it really took me a long time to figure it out.
+<br>
 ![sending request through POSTMAN](https://github.com/YitingLiu97/dwd_A5_Fortune_Cookies/blob/master/pics/16.png)
+<br>
+
 3. At first, when I try to POST anything, it only shows null or undefined.
+<br>
 ![screenshot of coding error](https://github.com/YitingLiu97/dwd_A5_Fortune_Cookies/blob/master/pics/6.png)
+<br>
+
 4. In my console, it prints out the whole object without parsing out the text and from. 
+<br>
 ![screenshot of coding error](https://github.com/YitingLiu97/dwd_A5_Fortune_Cookies/blob/master/pics/13.png)
+<br>
+
 5. I couldn't add my textInput to the existing array upon mouse click. 
+<br>
+
 ![screenshot of not able to add content to the array](https://github.com/YitingLiu97/dwd_A5_Fortune_Cookies/blob/master/pics/11.png)
+<br>
+
 6. When I wanted to console.log the array content, it shows me the position of the element instead. 
+<br>
+
 ![inspirational quote web interface](https://github.com/YitingLiu97/dwd_A5_Fortune_Cookies/blob/master/pics/14.png)
+<br>
+
 
 <!-- Any questions you have -->
 ## Questions
