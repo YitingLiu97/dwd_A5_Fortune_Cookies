@@ -2,6 +2,7 @@
 # The Inspirational Quotes Project
 <!-- A one sentence description of the project or assignment -->
 This project utilizes the [inspirational-quotes](https://www.npmjs.com/package/inspirational-quotes) library to develop an API service between server and client. 
+
 You can add your own quotes [here](https://yitingliu97-dwd-a5-inspo-quotes.glitch.me/)
 ![inspirational quote web interface](https://github.com/YitingLiu97/dwd_A5_Inspo_Quotes/blob/master/pics/inspo-quotes.png)
 
@@ -72,6 +73,9 @@ Please read the [CODE OF CONDUCT](https://www.mozilla.org/en-US/about/governance
 
 <!-- For your assignments you might consider  -->
 # Notes & Process
+
+Updates 03/08/2020
+I used NedB and created a databse for this inspirational quotes. The process is quite simple for me. 
 
 I wanted to create a website where users can contribute to the existing database. I chose inspirational-quotes since it is well documented. I followed the examples in the files when I installed the library. 
 
