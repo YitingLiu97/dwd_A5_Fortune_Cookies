@@ -72,11 +72,26 @@ Please read the [CODE OF CONDUCT](https://www.mozilla.org/en-US/about/governance
 ***
 
 <!-- For your assignments you might consider  -->
-# Notes & Process
-
-Updates 03/08/2020
+#Updates
+03/08/2020
 I used NedB and created a databse for this inspirational quotes. The process is quite simple for me. 
 
+I ran into problems with it first since the json file I worked with has two elements in one object. But then I tried to use the console.log to trouble shoot and it worked great. 
+
+One thing it didn't work was due to me not installing the nedb. 
+![nedb-install](https://github.com/YitingLiu97/dwd_A5_Fortune_Cookies/blob/master/pics/updates/nedb_install.png)
+
+I used several methods from db to find, update, and remove specific items. 
+
+I tried to find "Chinese Proverb" in the from variable in the database and succeeded. 
+![chinese-proverb](https://github.com/YitingLiu97/dwd_A5_Fortune_Cookies/blob/master/pics/updates/find_chinese_proverb.png)
+
+I also deleted my test quotes by deleting the _id.
+
+![deleting-the-id](https://github.com/YitingLiu97/dwd_A5_Fortune_Cookies/blob/master/pics/updates/delete_using_id.png)
+
+
+# Notes & Process
 I wanted to create a website where users can contribute to the existing database. I chose inspirational-quotes since it is well documented. I followed the examples in the files when I installed the library. 
 
 Although it took me quite a while to understand the code, I am glad I figured most of the things out and I did the coding project by myself and with the help of Google. 
@@ -92,31 +107,30 @@ I ran into several bugs during this project:
 
 
 2. I used Postman to figure out what I should do to send an object of quote and author. But it really took me a long time to figure it out.
-<br>
-![sending request through POSTMAN](https://github.com/YitingLiu97/dwd_A5_Fortune_Cookies/blob/master/pics/16.png)
-<br>
+
+![sending-request-through-POSTMAN](https://github.com/YitingLiu97/dwd_A5_Fortune_Cookies/blob/master/pics/16.png)
+
 
 3. At first, when I try to POST anything, it only shows null or undefined.
-<br>
-![screenshot of coding error](https://github.com/YitingLiu97/dwd_A5_Fortune_Cookies/blob/master/pics/6.png)
-<br>
+
+![screenshot-of-coding-error](https://github.com/YitingLiu97/dwd_A5_Fortune_Cookies/blob/master/pics/6.png)
+
 
 4. In my console, it prints out the whole object without parsing out the text and from. 
-<br>
-![screenshot of coding error](https://github.com/YitingLiu97/dwd_A5_Fortune_Cookies/blob/master/pics/13.png)
-<br>
+
+![screenshot-of-coding-error](https://github.com/YitingLiu97/dwd_A5_Fortune_Cookies/blob/master/pics/13.png)
+
 
 5. I couldn't add my textInput to the existing array upon mouse click. 
-<br>
 
-![screenshot of not able to add content to the array](https://github.com/YitingLiu97/dwd_A5_Fortune_Cookies/blob/master/pics/11.png)
-<br>
+
+![screenshot-of-not-able-to-add-content-to-the-array](https://github.com/YitingLiu97/dwd_A5_Fortune_Cookies/blob/master/pics/11.png)
 
 6. When I wanted to console.log the array content, it shows me the position of the element instead. 
-<br>
 
-![inspirational quote web interface](https://github.com/YitingLiu97/dwd_A5_Fortune_Cookies/blob/master/pics/14.png)
-<br>
+
+![inspirational-quote-web-interface](https://github.com/YitingLiu97/dwd_A5_Fortune_Cookies/blob/master/pics/14.png)
+
 
 
 <!-- Any questions you have -->
